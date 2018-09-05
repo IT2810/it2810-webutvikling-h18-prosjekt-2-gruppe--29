@@ -1,0 +1,17 @@
+.tabStyle {
+    border: 1px solid;
+    border-color: white;
+    background-color: #0089CC;
+    width: 50px;
+}
+
+.tabStyle:hover{
+    background-color: #1c4e8a;
+}
+
+.tabTextStyle {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
