@@ -1,3 +1,25 @@
+.tabStyle {
+    border: 1px solid;
+    border-color: #1c4e8a;
+    background-color: #0089CC;
+    width: 200px;
+}
+
+.tabStyle:hover{
+    background-color: #1c4e8a;
+}
+
+.tabTextStyle {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.tabContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+}
+
 .menuHeader {
 	font-family: "Avenir Next"
 }
