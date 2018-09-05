@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../components/tab.js';
+import { Tab } from '../components/tab.js';
 
 class App extends Component {
   render() {
