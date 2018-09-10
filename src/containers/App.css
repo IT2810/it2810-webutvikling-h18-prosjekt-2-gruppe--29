@@ -22,7 +22,12 @@
 
 .radioButton {
     margin-right: 50px;
-
+}
 .menuHeader {
 	font-family: "Avenir Next"
+}
+
+.pictureFrame {
+    width: auto;
+    height: auto;
 }
