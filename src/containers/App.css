@@ -1,12 +1,12 @@
 .tabStyle {
     border: 1px solid;
-    border-color: #1c4e8a;
-    background-color: #0089CC;
+    border-color: #277ab1;
+    background-color: #1674b1;
     width: 200px;
 }
 
 .tabStyle:hover{
-    background-color: #1c4e8a;
+    background-color: #4a8ebb;
 }
 
 .tabTextStyle {
