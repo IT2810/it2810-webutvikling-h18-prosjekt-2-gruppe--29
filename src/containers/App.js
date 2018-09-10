@@ -4,6 +4,7 @@ import '../components/tab.js';
 import '../components/tabContainer.js';
 import { Tab } from '../components/tab.js';
 import { TabContainer } from '../components/tabContainer.js';
+import { RadioButton } from '../components/radioButton.js';
 
 
 class App extends Component {
