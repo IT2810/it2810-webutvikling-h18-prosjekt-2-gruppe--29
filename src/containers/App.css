@@ -20,3 +20,6 @@
     grid-template-columns: repeat(4, 200px);
 }
 
+.menuHeader {
+	font-family: "Avenir Next"
+}

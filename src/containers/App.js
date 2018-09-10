@@ -4,7 +4,7 @@ import '../components/tab.js';
 import '../components/tabContainer.js';
 import { Tab } from '../components/tab.js';
 import { TabContainer } from '../components/tabContainer.js';
-
+import MenuHeader from '../components/MenuHeader';
 
 class App extends Component {
   render() {
