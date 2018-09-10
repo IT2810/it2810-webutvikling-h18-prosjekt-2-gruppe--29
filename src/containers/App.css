@@ -17,7 +17,7 @@
 
 .tabContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .radioButton {
@@ -47,15 +47,20 @@
 
 .largeMenuComponent {
     padding: 20px;
-    margin-top: 70px;
     width: auto;
     height: auto;
+    background-color: #69a3ca;
 }
 
 .contentContainer {
     display: grid;
     grid-template-columns: 66.667% 33.334%;
     width: 100%;
+    background-color: #c3d3dd;
+}
+
+.title {
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
