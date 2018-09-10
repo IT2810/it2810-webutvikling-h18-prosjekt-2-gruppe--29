@@ -4,7 +4,7 @@ export class MenuHeader extends Component {
 	render() {
 		return (
 			<div className="menuHeader">
-				<h1 className="menuHeaderTitle"> {this.props.menuHeaderTitle} </h1>
+				<div className="menuHeaderTitle"> {this.props.menuHeaderTitle} </div>
 			</div>
 		);
 	}

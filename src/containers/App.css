@@ -21,8 +21,63 @@
 }
 
 .radioButton {
-    margin-right: 50px;
+    margin: 40px 100px;
+	transform: scale(4);
+	
+}
+
+.radioButtonLine {
+	font-size: 30px;
+}
+
+.radioText {
+	margin-left: 100px;
+}
+
+.radioButton label {
+	margin-left: 500;
+}
+
+
+.menuHeader:first-of-type {
+	padding-top: 200px;
+}
+
+
 
 .menuHeader {
-	font-family: "Avenir Next"
+	text-align: center;
+	font-size: 50px;
+	margin: 40px;
 }
+
+.menu {
+	display: none;
+	position:fixed;
+	width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    background-color: white;
+    margin: 0;
+	font-family: "Roboto";
+}
+
+.MenuToggle {
+	position: fixed;
+	left: 50%;
+	margin: auto;
+	height: 150px;
+	width: 150px;
+	border: 5px solid rgb(200,200,200);
+	border-radius: 50%;
+	margin-top: -120px;
+	font-size: 120px;
+	text-align: center;
+	font-weight: 0;
+	color: rgb(200,200,200);
+	font-family: verdana;
+	z-index: 2000;
+	}
+
