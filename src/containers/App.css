@@ -31,3 +31,9 @@
     width: auto;
     height: auto;
 }
+
+.dynamicPictureContainer {
+    width: auto;
+    height: auto;
+    padding: 50px;
+}
