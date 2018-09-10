@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../components/tab.js';
+import '../components/tabContainer.js';
+import { Tab } from '../components/tab.js';
+import { TabContainer } from '../components/tabContainer.js';
+
 
 class App extends Component {
   render() {
