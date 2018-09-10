@@ -7,8 +7,8 @@ export class ContentContainer extends Component {
     render () {
         return (
             <div className='contentContainer'>
-                <ExContainer></ExContainer>
-                <LargeMenuComponent></LargeMenuComponent>
+                <ExContainer/>
+                <LargeMenuComponent/>
             </div>
         )
     }
