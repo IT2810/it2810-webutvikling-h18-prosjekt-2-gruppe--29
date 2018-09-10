@@ -57,3 +57,9 @@
     grid-template-columns: 66.667% 33.334%;
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .largeMenuComponent {
+        display: none;
+    }
+}
