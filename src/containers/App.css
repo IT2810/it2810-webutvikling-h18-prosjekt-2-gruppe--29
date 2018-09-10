@@ -20,6 +20,9 @@
     grid-template-columns: repeat(4, 200px);
 }
 
+.radioButton {
+    margin-right: 50px;
+
 .menuHeader {
 	font-family: "Avenir Next"
 }
