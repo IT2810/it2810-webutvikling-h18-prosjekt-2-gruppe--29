@@ -2,7 +2,7 @@
     border: 1px solid;
     border-color: #277ab1;
     background-color: #1674b1;
-    width: 200px;
+    width: auto;
 }
 
 .tabStyle:hover{
@@ -17,9 +17,54 @@
 
 .tabContainer {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .radioButton {
     margin-right: 50px;
+}
+.menuHeader {
+	font-family: "Avenir Next"
+}
+
+.pictureFrame {
+    width: auto;
+    height: auto;
+    background-color: #277ab1;
+}
+
+.dynamicPictureContainer {
+    display: grid;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    padding: 50px;
+}
+
+.exContainer {
+    width: auto;
+}
+
+.largeMenuComponent {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: #69a3ca;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 66.667% 33.334%;
+    width: 100%;
+    background-color: #c3d3dd;
+}
+
+.title {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .largeMenuComponent {
+        display: none;
+    }
 }
