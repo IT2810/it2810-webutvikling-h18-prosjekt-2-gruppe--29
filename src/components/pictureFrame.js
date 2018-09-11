@@ -6,8 +6,10 @@ export class PictureFrame extends Component {
         super()
         this.state = {
             tekst: "",
+            imgUrl: ""
         }
         this.getText(props.textName);
+        this.getImg(props.imgName);
     }
 
     getText(props){
@@ -17,12 +19,24 @@ export class PictureFrame extends Component {
           })
       }
 
+    getImg = async (props) => {
+      try {
+        const picture = await axios.get('/pictures/' + props + '.svg');
+        this.setState({
+          imgUrl: picture.data
+        })
+      }
+      catch (error) {
+        console.error(error);
+      }
+    }
+
     render () {
         return (
             <div className="pictureFrame">
                 <p>{this.state.tekst}</p>
+                <div dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></div>
             </div>
         )
     }
 }
-
