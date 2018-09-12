@@ -6,20 +6,13 @@ export class LargeMenuComponent extends Component {
     render () {
         return (
             <div className='largeMenuComponent'>
-                <MenuHeader menuHeaderTitle="Media group 1"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
-                <MenuHeader menuHeaderTitle="Media group 2"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
-                <MenuHeader menuHeaderTitle="Media group 3"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
-                <RadioButton text="Option 1"/>
+                <MenuHeader menuHeaderTitle="Picture"/>
+                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+                <MenuHeader menuHeaderTitle="Text"/>
+                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+                <MenuHeader menuHeaderTitle="Audio"/>
+                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
             </div>
         )
     }
 }
-
