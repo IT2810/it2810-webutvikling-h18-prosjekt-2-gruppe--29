@@ -10,17 +10,11 @@ export class MenuContent extends Component {
     return (
       <div className="menuContent">
           <MenuHeader menuHeaderTitle="Text" id="topMenuHeader"/>
-            <RadioButton text="Option 1"/>
-            <RadioButton text="Option 2"/>
-            <RadioButton text="Option 3"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
           <MenuHeader menuHeaderTitle="Sound"/>
-            <RadioButton text="Option 1"/>
-            <RadioButton text="Option 2"/>
-            <RadioButton text="Option 3"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
           <MenuHeader menuHeaderTitle="Audio"/>
-            <RadioButton text="Option 1"/>
-            <RadioButton text="Option 2"/>
-            <RadioButton text="Option 3"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
         </div>
     );
   }

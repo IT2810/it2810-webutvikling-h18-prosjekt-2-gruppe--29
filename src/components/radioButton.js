@@ -6,14 +6,28 @@ export class RadioButton extends Component {
 
     return (
       <div className="radioButtonLine">
-        <form >
-          <label>
-            <input className="radioButton" type="radio" value={this.props.text} />
-            {this.props.text}
-          </label>
+        <form>
+          <div>
+            <label>
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt1} />
+              {this.props.opt1}
+            </label>
+          </div>
+          <div>
+            <label>
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt2} />
+              {this.props.opt2}
+            </label>
+          </div>
+          <div>
+            <label>
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt3} />
+              {this.props.opt3}
+            </label>
+          </div>
         </form>
       </div>
     );
   }
-  
+
 }
