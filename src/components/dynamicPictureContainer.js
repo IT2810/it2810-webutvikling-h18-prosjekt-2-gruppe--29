@@ -6,7 +6,7 @@ export class DynamicPictureContainer extends Component {
     render () {
         return (
             <div className="dynamicPictureContainer">
-                <PictureFrame />
+                <PictureFrame textName={this.props.textName} imgName={this.props.imgName}/>
             </div>
         )
     }
