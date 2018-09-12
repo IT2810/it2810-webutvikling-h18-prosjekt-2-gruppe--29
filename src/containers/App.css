@@ -22,12 +22,13 @@
 
 .radioButton {
     margin: 10px 20px;
-	transform: scale(1.5);
+	transform: scale(2);
 
 }
 
 .radioButtonLine {
-	font-size: 20px;
+	font-size: 40px;
+  margin: 40px 0px;
 }
 
 .radioText {
@@ -47,7 +48,7 @@
 
 .menuHeader {
 	text-align: center;
-	font-size: 30px;
+	font-size: 60px;
 	margin: 12px 40px;
 }
 
@@ -63,16 +64,17 @@
 	font-family: "Roboto";
 }
 
+
 .MenuToggle {
 	position: fixed;
-	left: calc(50% - 25px);
+	left: calc(50% - 35px);
 	margin: auto;
-	height: 40px;
-	width: 40px;
-	border: 5px solid rgb(200,200,200);
+	height: 66px;
+	width: 66px;
+	border: 2px solid rgb(200,200,200);
 	border-radius: 50%;
-	margin-top: -120px;
-	font-size: 30px;
+	margin-top: -140px;
+	font-size: 50px;
 	text-align: center;
 	font-weight: 0;
 	color: rgb(200,200,200);
