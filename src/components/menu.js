@@ -9,29 +9,29 @@ import { MenuContent } from '../components/MenuContent.js';
 
 export class Menu extends Component {
 
-		constructor(props, context) {
-        super(props, context);
+	constructor(props, context) {
+		super(props, context);
 
-				this.state = { showMenu: false };
-				this.toggleMenu = this.toggleMenu.bind(this);
-    }
+		this.state = { showMenu: false };
+		this.toggleMenu = this.toggleMenu.bind(this);
+  }
 
-		toggleMenu() {
-        const currentState = this.state.showMenu;
-        this.setState({ showMenu: !currentState });
-    };
+	toggleMenu() {
+    const currentState = this.state.showMenu;
+    this.setState({ showMenu: !currentState });
+  };
 
 
-    render () {
-        return (
-	        <div className="menu">
-		        <div className="MenuToggle" onClick={this.toggleMenu}>
-							<i class="fa fa-angle-down"></i>
-						</div>
-					{this.state.showMenu && <MenuContent/>}
-					</div>
-        )
-    }
+  render () {
+  	return (
+	  	<div className="menu">
+	      <div className="MenuToggle" onClick={this.toggleMenu}>
+					<i class="fa fa-angle-down"></i>
+				</div>
+			{this.state.showMenu && <MenuContent/>}
+			</div>
+    )
+  }
 }
 
 export default Menu;
