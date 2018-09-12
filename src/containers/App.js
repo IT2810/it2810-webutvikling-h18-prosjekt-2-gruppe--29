@@ -14,8 +14,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Menu/>
         <h1 className="title">Gallery Amazing Fantastico</h1>
+        <Menu/>
         <ContentContainer />
 
       </div>
