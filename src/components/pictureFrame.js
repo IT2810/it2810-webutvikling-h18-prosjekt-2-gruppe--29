@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Music} from './Music.js';
 
 export class PictureFrame extends Component {
+    
     constructor(props){
         super()
         this.state = {
@@ -36,6 +38,7 @@ export class PictureFrame extends Component {
             <div className="pictureFrame">
                 <p>{this.state.tekst}</p>
                 <div dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></div>
+                <Music audioName={this.props.audioName}/>
             </div>
         )
     }

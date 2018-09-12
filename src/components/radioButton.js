@@ -5,7 +5,7 @@ export class RadioButton extends Component {
   render() {
 
     return (
-      <div >
+      <div className="radioButtonLine">
         <form>
           <div>
             <label>
