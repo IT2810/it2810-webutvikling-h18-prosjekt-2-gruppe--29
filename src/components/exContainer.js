@@ -8,7 +8,7 @@ export class ExContainer extends Component {
         return (
             <div className="exContainer">
                 <TabContainer />
-                <DynamicPictureContainer textName="joke1" imgName="Baloo" audioName={dogBark}/>
+                <DynamicPictureContainer textName="joke1" imgName="cats" audioName={dogBark}/>
             </div>
         )
     }
