@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 export class RadioButton extends Component {
 
+  //saves selected radio btn according to category in state
+  updateRadioButtonAttr = (e) => {
+    this.props.updateRadioButtonAttr(e, this.props.type);
+  };
+
   render() {
 
     return (
@@ -9,19 +14,22 @@ export class RadioButton extends Component {
         <form>
           <div>
             <label>
-              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt1} />
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt1}
+              onChange={this.updateRadioButtonAttr}/>
               {this.props.opt1}
             </label>
           </div>
           <div>
             <label>
-              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt2} />
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt2}
+              onChange={this.updateRadioButtonAttr}/>
               {this.props.opt2}
             </label>
           </div>
           <div>
             <label>
-              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt3} />
+              <input className="radioButton" type="radio" name="radioButtonGroup" value={this.props.opt3}
+              onChange={this.updateRadioButtonAttr}/>
               {this.props.opt3}
             </label>
           </div>
