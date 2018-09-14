@@ -5,6 +5,9 @@ import React, { Component } from 'react';
 import { MenuHeader } from '../components/MenuHeader.js';*/
 import { MenuContent } from '../components/MenuContent.js';
 
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
+
+
 
 
 export class Menu extends Component {
@@ -22,13 +25,21 @@ export class Menu extends Component {
   };
 
 
+
+
+
+
   render () {
   	return (
 	  	<div className="menu">
 	      <div className="MenuToggle" onClick={this.toggleMenu}>
-					<i class="fa fa-angle-down"></i>
+					<i class= {this.state.showMenu ? "fa fa-angle-up" : "fa fa-angle-down"} ></i>
 				</div>
-			{this.state.showMenu && <MenuContent/>}
+				<ReactCSSTransitionReplace
+					transitionName="slide-in"
+					transitionLeaveTimeout={500}>
+			{this.state.showMenu && <MenuContent />}
+				</ReactCSSTransitionReplace>
 			</div>
     )
   }

@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">Gallery Amazing Fantastico</h1>
-        <Menu/>
         <ContentContainer />
+        <Menu/>
 
       </div>
     );

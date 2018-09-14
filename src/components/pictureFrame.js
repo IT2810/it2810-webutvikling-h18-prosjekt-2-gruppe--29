@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Music} from './Music.js';
 
 export class PictureFrame extends Component {
-    
+
     constructor(props){
         super()
         this.state = {
