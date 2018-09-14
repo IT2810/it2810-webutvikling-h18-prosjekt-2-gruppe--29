@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
 
-/*import { RadioButton } from '../components/radioButton.js';
-import { MenuHeader } from '../components/MenuHeader.js';*/
 import { MenuContent } from '../components/MenuContent.js';
 
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
