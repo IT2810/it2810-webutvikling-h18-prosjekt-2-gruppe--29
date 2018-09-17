@@ -5,6 +5,10 @@
     width: auto;
 }
 
+audio {
+    width: 150px;
+}
+
 .tabStyle:hover{
     background-color: #4a8ebb;
 }
@@ -20,7 +24,6 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-
 .pictureFrame {
     width: auto;
     height: auto;
@@ -32,11 +35,16 @@
     justify-items: center;
     width: auto;
     height: auto;
-    padding: 50px;
+    padding: 20px;
+    position: relative;
 }
 
 .exContainer {
     width: auto;
+}
+
+.img {
+    width: 100%;
 }
 
 .largeMenuComponent {
@@ -55,6 +63,7 @@
 
 .title {
     text-align: center;
+    margin-top: 50px;
 }
 
 svg {
@@ -72,7 +81,26 @@ svg {
 	}
 	.tabContainer {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(50px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    }
+
+    .exContainer {
+        width: auto;
+    }
+    .contentContainer {
+        grid-template-columns: 100%;
+        width: auto;
+    }
+
+    .dynamicPictureContainer {
+        display: grid;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
     }
 
   .menuHeaderTitle {
