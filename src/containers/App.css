@@ -20,7 +20,6 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-
 .pictureFrame {
     width: auto;
     height: auto;
@@ -32,7 +31,7 @@
     justify-items: center;
     width: auto;
     height: auto;
-    padding: 50px;
+    padding: 20px;
 }
 
 .exContainer {
@@ -55,6 +54,7 @@
 
 .title {
     text-align: center;
+    margin-top: 50px;
 }
 
 svg {
@@ -72,7 +72,14 @@ svg {
 	}
 	.tabContainer {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(50px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
+    .exContainer {
+        width: 100%;
+    }
+    .contentContainer {
+        grid-template-columns: 100%;
     }
 
   .menuHeaderTitle {
