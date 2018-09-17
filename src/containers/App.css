@@ -32,10 +32,15 @@
     width: auto;
     height: auto;
     padding: 20px;
+    position: relative;
 }
 
 .exContainer {
     width: auto;
+}
+
+.img {
+    width: 100%;
 }
 
 .largeMenuComponent {
@@ -72,14 +77,26 @@ svg {
 	}
 	.tabContainer {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     }
 
     .exContainer {
-        width: 100%;
+        width: auto;
     }
     .contentContainer {
         grid-template-columns: 100%;
+        width: auto;
+    }
+
+    .dynamicPictureContainer {
+        display: grid;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
     }
 
   .menuHeaderTitle {
