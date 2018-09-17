@@ -5,6 +5,10 @@
     width: auto;
 }
 
+audio {
+    width: 150px;
+}
+
 .tabStyle:hover{
     background-color: #4a8ebb;
 }
