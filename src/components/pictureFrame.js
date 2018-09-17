@@ -36,9 +36,9 @@ export class PictureFrame extends Component {
     render () {
         return (
             <div className="pictureFrame">
-                <p>{this.state.tekst}</p>
+                <p className="loadedText">{this.state.tekst}</p>
                 <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>
-                <Music audioName={this.props.audioName}/>
+                
             </div>
         )
     }
