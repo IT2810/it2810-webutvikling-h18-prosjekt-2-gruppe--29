@@ -3,15 +3,23 @@ import { RadioButton } from './radioButton.js';
 import { MenuHeader } from './MenuHeader.js';
 
 export class LargeMenuComponent extends Component {
+
+  //saves selected radio btn according to category in state
+  updateRadioButtonAttr = (e, type) => {
+    //largemenucomponent
+    this.props.updateRadioButtonAttr(e, type);
+  };
+
+    //menu for pc
     render () {
         return (
             <div className='largeMenuComponent'>
                 <MenuHeader menuHeaderTitle="Picture"/>
-                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedPic" />
                 <MenuHeader menuHeaderTitle="Text"/>
-                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedText"/>
                 <MenuHeader menuHeaderTitle="Audio"/>
-                  <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedAudio"/>
             </div>
         )
     }

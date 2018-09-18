@@ -4,10 +4,6 @@ import React, { Component } from 'react';
 import { RadioButton } from '../components/radioButton.js';
 import { MenuHeader } from '../components/MenuHeader.js';
 
-
-
-
-
 export class MenuContent extends Component {
     constructor(props, context) {
     super(props, context);
@@ -24,18 +20,23 @@ export class MenuContent extends Component {
     this.setState((state, props) => ({ entered : false }))
   }
 
+  updateRadioButtonAttr = (e, type) => {
+    //menucontent
+    this.props.updateRadioButtonAttr(e, type);
+  }
+
 
   render () {
 
-
+    //menu for mobil
   return (
           <div className="menuContent">
-          <MenuHeader menuHeaderTitle="Text" id="topMenuHeader"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
-          <MenuHeader menuHeaderTitle="Sound"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+          <MenuHeader menuHeaderTitle="Picture" id="topMenuHeader"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedPic" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+          <MenuHeader menuHeaderTitle="Text"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedText" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
           <MenuHeader menuHeaderTitle="Audio"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedAudio" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
           </div>
 
 
