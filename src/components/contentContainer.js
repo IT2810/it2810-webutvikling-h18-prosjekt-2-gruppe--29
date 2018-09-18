@@ -15,7 +15,6 @@ export class ContentContainer extends Component {
   }
 
   updateRadioButtonAttr = (e, type) => {
-    //contentcontainer
     if(type === "selectedPic"){
       this.setState({
         selectedPic: e.target.value
@@ -34,12 +33,13 @@ export class ContentContainer extends Component {
   }
 
   render () {
-      return (
-          <div className='contentContainer'>
-              <ExContainer/>
-              <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
-              <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
-          </div>
-      )
+    return (
+      <div className='contentContainer'>
+        <ExContainer/>
+        <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+        <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+      </div>
+    )
   }
+  
 }
