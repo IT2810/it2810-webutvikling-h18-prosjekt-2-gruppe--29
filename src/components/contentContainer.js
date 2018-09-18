@@ -25,6 +25,7 @@ export class ContentContainer extends Component {
   updateRadioButtonAttr = (e, type) => {
     //contentcontainer
     console.log(type)
+   
     if(type === "selectedPic"){
       this.setState({
         selectedPic: e.target.value
@@ -51,4 +52,5 @@ export class ContentContainer extends Component {
           </div>
       )
   }
+  
 }
