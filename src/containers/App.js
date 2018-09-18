@@ -9,7 +9,6 @@ class App extends Component {
       <div className="App">
         <h1 className="title">Gallery</h1>
         <ContentContainer />
-
       </div>
     );
   }
