@@ -36,7 +36,7 @@ export class Menu extends Component {
 				<ReactCSSTransitionReplace
 					transitionName="slide-in"
 					transitionLeaveTimeout={500}>
-			{this.state.showMenu && <MenuContent />}
+						{this.state.showMenu && <MenuContent />}
 				</ReactCSSTransitionReplace>
 			</div>
     )

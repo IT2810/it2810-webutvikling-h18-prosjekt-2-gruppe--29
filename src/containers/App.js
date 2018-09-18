@@ -8,7 +8,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">Gallery Amazing Fantastico</h1>
         <ContentContainer />
         <Menu/>
 

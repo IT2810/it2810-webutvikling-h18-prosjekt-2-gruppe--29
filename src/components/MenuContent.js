@@ -31,11 +31,11 @@ export class MenuContent extends Component {
   return (
           <div className="menuContent">
           <MenuHeader menuHeaderTitle="Text" id="topMenuHeader"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
           <MenuHeader menuHeaderTitle="Sound"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
           <MenuHeader menuHeaderTitle="Audio"/>
-            <RadioButton buttonAfter="true" opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
+            <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows"/>
           </div>
 
 

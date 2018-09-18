@@ -9,9 +9,7 @@ export class ContentContainer extends Component {
             <div className='contentContainer'>
                 <ExContainer/>
                 <LargeMenuComponent/>
-  
             </div>
         )
     }
 }
-
