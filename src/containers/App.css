@@ -1,7 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
 .tabStyle {
     border: 1px solid;
-    border-color:  rgb(90, 101, 124);
-    background-color: #6D7993;
+    border-color:  #2A3132;
+    background-color: #336B87;
     width: auto;
 }
 
@@ -46,6 +51,7 @@ audio::-webkit-media-controls-panel{
     height: auto;
     padding: 20px;
     position: relative;
+    background-color: #fcfcfc;
 }
 
 .exContainer {
@@ -60,21 +66,21 @@ audio::-webkit-media-controls-panel{
     padding: 20px;
     width: auto;
     height: auto;
-    background-color: #96858F;
+    background-color: #f2f2f2;
+
 }
 
 .contentContainer {
     display: grid;
     grid-template-columns: 66.667% 33.334%;
     width: 100%;
-    border-color: #D5D5D5;
-    border: 1px solid;
 }
 
 .title {
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
+    font-size: 50px;
+    padding-left: 120px;
 }
 
 svg {
@@ -202,6 +208,7 @@ svg {
     margin: auto;
   }
 
+
   .checkmark {
     position: absolute;
     right: 10%;
@@ -235,27 +242,29 @@ svg {
 
 @media only screen and (min-width: 800px) {
 
-  .menuHeader:first-of-type {
-  	padding-top: 50px;
-  }
-
 	.menu {
 		display: none;
   }
 
+  .menuHeaderTitle {
+    padding-top: 30px;
+    padding-left: 40px;
+    border-top: 1px solid #d9d9d9;
+  }
 
 	.largeMenuComponent {
       display: inline;
   }
 
   .radioButton input {
-    margin: 10px 20px;
+    margin: 5px 45px 5px 10px;
   	transform: scale(2);
   }
 
   .radioButton {
   	font-size: 40px;
-    margin: 00px 0px;
+    margin: 0px 0px 20px 0px;
+
   }
 
   .radioText {
@@ -268,9 +277,7 @@ svg {
   }
 
   .menuHeader {
-  	text-align: center;
   	font-size: 25px;
-  	margin: 2px 10px;
   }
 
 }
