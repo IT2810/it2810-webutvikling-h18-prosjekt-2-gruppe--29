@@ -1,44 +1,60 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {Music} from './Music.js';
 
 export class PictureFrame extends Component {
-
     constructor(props){
         super()
         this.state = {
-            tekst: "",
+            text: "",
             imgUrl: ""
         }
-        this.getText(props.textName);
-        this.getImg(props.imgName);
+        
+    }
+    componentDidMount(){
+        this.getText(this.props.textName);
+        this.getImg(this.props.imgName);
     }
 
-    getText(props){
+    getText= (props) => {
+        const cachedHits = localStorage.getItem(props);
+        if (cachedHits) {
+            this.setState({
+                text: cachedHits
+            });     
+          return;
+        }
         axios.get('/text/' + props + '.json')
           .then(res => {
-            this.setState({tekst: res.data.text});
-            localStorage.setItem(props, JSON.stringify(res.data.text));
-          })
+            this.onSetResult(props, res.data.text)});
+      }
+      onSetResult = (key, value) => {
+        localStorage.setItem(key, JSON.stringify(value));
+        this.setState({ text: value });
       }
 
     getImg = async (props) => {
-      try {
-        const picture = await axios.get('/pictures/' + props + '.svg');
-        this.setState({
-          imgUrl: picture.data
-        })
-        localStorage.setItem(props, JSON.stringify(picture.data));
-      }
-      catch (error) {
-        console.error(error);
-      }
+        let dataVar = JSON.parse(localStorage.getItem(props))
+        if(dataVar){
+            this.setState({
+                imgUrl:  dataVar
+            });
+            return;
+        }
+        try {
+            const picture = await axios.get('/pictures/' + props + '.svg');
+            this.setState({
+                imgUrl: picture.data
+            })
+            localStorage.setItem(props, JSON.stringify(picture.data))
+        }
+        catch (error) {
+            console.error(error);
+        }
     }
-
     render () {
         return (
             <div className="pictureFrame">
-                <p className="loadedText">{this.state.tekst}</p>
+                <p className="loadedText">{this.state.text}</p>
                 <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>                
             </div>
         )
