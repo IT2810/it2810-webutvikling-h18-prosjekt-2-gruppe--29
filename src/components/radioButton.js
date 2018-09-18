@@ -19,7 +19,7 @@ export class RadioButton extends Component {
           <div className="radioButtonLine">
             <label>
               {this.props.buttonAfter && this.props.opt1}
-              <input type="radio" name="radioButtonGroup" value={this.props.opt1} />
+              <input type="radio" name="radioButtonGroup" value={this.props.opt1} onChange={this.updateRadioButtonAttr}/>
               {this.props.buttonAfter && <span className="checkmark"><span className="mark"></span></span> }
               {!this.props.buttonAfter && this.props.opt1}
             </label>
@@ -27,7 +27,7 @@ export class RadioButton extends Component {
           <div className="radioButtonLine">
             <label>
               {this.props.buttonAfter && this.props.opt2 }
-              <input type="radio" name="radioButtonGroup" value={this.props.opt2} />
+              <input type="radio" name="radioButtonGroup" value={this.props.opt2} onChange={this.updateRadioButtonAttr}/>
               {this.props.buttonAfter && <span className="checkmark"><span className="mark"></span></span> }
               {!this.props.buttonAfter && this.props.opt2 }
             </label>
@@ -35,7 +35,7 @@ export class RadioButton extends Component {
           <div className="radioButtonLine">
             <label>
               {this.props.buttonAfter && this.props.opt3}
-              <input type="radio" name="radioButtonGroup" value={this.props.opt3} />
+              <input type="radio" name="radioButtonGroup" value={this.props.opt3} onChange={this.updateRadioButtonAttr}/>
               {this.props.buttonAfter && <span className="checkmark"><span className="mark"></span></span> }
               {!this.props.buttonAfter && this.props.opt3}
             </label>

@@ -3,13 +3,13 @@ import { LargeMenuComponent } from './largeMenuComponent.js';
 import { ExContainer } from './exContainer.js';
 
 export class ContentContainer extends Component {
-    render () {
-        return (
-            <div className='contentContainer'>
-                <ExContainer/>
-                <LargeMenuComponent/>
-            </div>
-        )
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedPic: "",
+      selectedText: "",
+      selectedAudio: ""
     }
   }
 
@@ -36,6 +36,9 @@ export class ContentContainer extends Component {
           <div className='contentContainer'>
               <ExContainer/>
               <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+              <div>{this.state.selectedPic}</div>
+              <div>{this.state.selectedText}</div>
+              <div>{this.state.selectedAudio}</div>
           </div>
       )
   }
