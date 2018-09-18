@@ -21,13 +21,14 @@ export class MenuContent extends Component {
   }
 
   updateRadioButtonAttr = (e, type) => {
+    //menucontent
     this.props.updateRadioButtonAttr(e, type);
   }
 
 
   render () {
 
-
+    //menu for mobil
   return (
           <div className="menuContent">
           <MenuHeader menuHeaderTitle="Picture" id="topMenuHeader"/>

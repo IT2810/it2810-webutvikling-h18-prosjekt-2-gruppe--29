@@ -14,7 +14,7 @@ export class Menu extends Component {
 
 	constructor(props, context) {
 		super(props, context);
-
+		this.updateRadioButtonAttr = this.updateRadioButtonAttr.bind(this);
 		this.state = { showMenu: false };
 		this.toggleMenu = this.toggleMenu.bind(this);
   }
@@ -24,7 +24,10 @@ export class Menu extends Component {
     this.setState({ showMenu: !currentState });
   };
 
-
+	updateRadioButtonAttr(e,type) {
+		//menu.js
+		this.props.updateRadioButtonAttr(e, type);
+	}
 
 
 
@@ -38,7 +41,7 @@ export class Menu extends Component {
 				<ReactCSSTransitionReplace
 					transitionName="slide-in"
 					transitionLeaveTimeout={500}>
-			{this.state.showMenu && <MenuContent />}
+			{this.state.showMenu && <MenuContent updateRadioButtonAttr={this.updateRadioButtonAttr}/>}
 				</ReactCSSTransitionReplace>
 			</div>
     )

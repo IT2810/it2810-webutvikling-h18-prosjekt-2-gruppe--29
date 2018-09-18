@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { LargeMenuComponent } from './largeMenuComponent.js';
 import { ExContainer } from './exContainer.js';
+import { Menu } from './menu.js';
 
 export class ContentContainer extends Component {
 
@@ -14,6 +15,7 @@ export class ContentContainer extends Component {
   }
 
   updateRadioButtonAttr = (e, type) => {
+    //contentcontainer
     if(type === "selectedPic"){
       this.setState({
         selectedPic: e.target.value
@@ -35,10 +37,8 @@ export class ContentContainer extends Component {
       return (
           <div className='contentContainer'>
               <ExContainer/>
+              <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
               <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
-              <div>{this.state.selectedPic}</div>
-              <div>{this.state.selectedText}</div>
-              <div>{this.state.selectedAudio}</div>
           </div>
       )
   }

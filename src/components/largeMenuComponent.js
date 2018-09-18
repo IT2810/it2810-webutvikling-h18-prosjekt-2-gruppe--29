@@ -6,9 +6,11 @@ export class LargeMenuComponent extends Component {
 
   //saves selected radio btn according to category in state
   updateRadioButtonAttr = (e, type) => {
+    //largemenucomponent
     this.props.updateRadioButtonAttr(e, type);
   };
 
+    //menu for pc
     render () {
         return (
             <div className='largeMenuComponent'>
