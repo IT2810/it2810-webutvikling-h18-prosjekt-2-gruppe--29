@@ -1,4 +1,21 @@
+.tabStyle {
+    border: 1px solid;
+    border-color:  rgb(90, 101, 124);
+    background-color: #6D7993;
+    width: auto;
+}
 
+audio {
+    width: 110px;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color: #96858F;
+}
+
+.tabStyle:hover{
+    background-color: rgb(140, 144, 153);
+}
 
 .tabTextStyle {
     text-align: center;
@@ -6,12 +23,20 @@
     color: white;
 }
 
+.loadedText {
+  font-family: 'Oswald', sans-serif;
+}
 
+.tabContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
 
 .pictureFrame {
+  margin-top: 12%;
     width: auto;
     height: auto;
-    background-color: #277ab1;
+    background-color: white;
 }
 
 .dynamicPictureContainer {
@@ -19,23 +44,37 @@
     justify-items: center;
     width: auto;
     height: auto;
-    padding: 50px;
+    padding: 20px;
+    position: relative;
 }
 
 .exContainer {
     width: auto;
 }
 
+.img {
+    width: 100%;
+}
+
 .largeMenuComponent {
     padding: 20px;
     width: auto;
     height: auto;
-    background-color: #69a3ca;
+    background-color: #96858F;
 }
 
+.contentContainer {
+    display: grid;
+    grid-template-columns: 66.667% 33.334%;
+    width: 100%;
+    border-color: #D5D5D5;
+    border: 1px solid;
+}
 
 .title {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
 }
 
 svg {
@@ -51,11 +90,33 @@ svg {
     .menu {
 		display: inline;
 	}
+	.tabContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    }
 
-  
+    .exContainer {
+        width: auto;
+    }
+    .contentContainer {
+        grid-template-columns: 100%;
+        width: auto;
+    }
+
+    .dynamicPictureContainer {
+        display: grid;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
 
   .menuHeaderTitle {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: rgb(75,75,75);
     margin: 25px 0;
@@ -74,7 +135,7 @@ svg {
     left:0px;
     z-index:1000;
     background-color: white;
-    font-family: "Helvetica Neue";
+    font-family: 'Roboto', sans-serif;
     white-space: pre-line;
     overflow: scroll;
     border-bottom: 1px solid grey;
@@ -82,7 +143,7 @@ svg {
 
 
   .slide-in-enter {
-    top: -101vh;
+    top: -100vh;
   }
   .slide-in-enter.slide-in-enter-active {
     top: 0;
@@ -92,7 +153,7 @@ svg {
     top: 0;
   }
   .slide-in-leave.slide-in-leave-active {
-    top: -101vh;
+    top: -100vh;
     transition: top 0.5s;
   }
 
@@ -174,38 +235,14 @@ svg {
 
 @media only screen and (min-width: 800px) {
 
-  .contentContainer {
-      display: grid;
-      grid-template-columns: 66.667% 33.334%;
-      width: 100%;
-      background-color: #c3d3dd;
-  }
-
-  .tabContainer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-
-  .tabStyle {
-      border: 1px solid;
-      border-color: #277ab1;
-      background-color: #1674b1;
-      width: auto;
-  }
-
-  .tabStyle:hover{
-      background-color: #4a8ebb;
-  }
-
-
   .menuHeader:first-of-type {
   	padding-top: 50px;
   }
 
 	.menu {
 		display: none;
-	}
+  }
+  
 
 	.largeMenuComponent {
       display: inline;
@@ -216,13 +253,9 @@ svg {
   	transform: scale(2);
   }
 
-  .checkmark {
-    display: none;
-  }
-
   .radioButton {
   	font-size: 40px;
-    margin: 40px 0px;
+    margin: 00px 0px;
   }
 
   .radioText {
@@ -230,13 +263,14 @@ svg {
   }
 
   .radioButton label {
-  	margin-left: 10px;
+    margin-left: 10px;
+    font-size: 15px;
   }
 
   .menuHeader {
   	text-align: center;
-  	font-size: 60px;
-  	margin: 12px 40px;
+  	font-size: 25px;
+  	margin: 2px 10px;
   }
 
 }

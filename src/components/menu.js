@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
 
+/*import { RadioButton } from '../components/radioButton.js';
+import { MenuHeader } from '../components/MenuHeader.js';*/
 import { MenuContent } from '../components/MenuContent.js';
 
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
@@ -36,7 +38,7 @@ export class Menu extends Component {
 				<ReactCSSTransitionReplace
 					transitionName="slide-in"
 					transitionLeaveTimeout={500}>
-						{this.state.showMenu && <MenuContent />}
+			{this.state.showMenu && <MenuContent />}
 				</ReactCSSTransitionReplace>
 			</div>
     )
