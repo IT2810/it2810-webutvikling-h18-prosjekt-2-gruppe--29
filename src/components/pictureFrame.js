@@ -17,7 +17,8 @@ export class PictureFrame extends Component {
     getText(props){
         axios.get('/text/' + props + '.json')
           .then(res => {
-            this.setState({tekst: res.data.text})
+            this.setState({tekst: res.data.text});
+            localStorage.setItem(props, JSON.stringify(res.data.text));
           })
       }
 
@@ -27,6 +28,7 @@ export class PictureFrame extends Component {
         this.setState({
           imgUrl: picture.data
         })
+        localStorage.setItem(props, JSON.stringify(picture.data));
       }
       catch (error) {
         console.error(error);
@@ -37,8 +39,7 @@ export class PictureFrame extends Component {
         return (
             <div className="pictureFrame">
                 <p className="loadedText">{this.state.tekst}</p>
-                <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>
-                
+                <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>                
             </div>
         )
     }
