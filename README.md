@@ -22,8 +22,13 @@ Når en tab trykkes på....
 Vi har brukt react <3
 
 - Ajax
-Bruker Ajax for å hente ut svg og tekst. 
+
+Vi har brukt Ajax og tredjepartsbiblioteket Axios for å hente svg og tekst. Metodene for dette har vi i `pictureFrame.js`. 
+
+Når en fil er åpnet (et bilde eller en tekst) så lagres dette i klienten. Dette er også i de tilhørende metodene i `pictureFrame.js` (caching av bilde skjer i funksjonen getImg() og caching av tekst skjer i funksjonen getText()). På denne måten lastes filen kun dersom brukeren ikke har hentet den aktuelle filen fra før av. 
 
 - Samarbeid/bruk av Git
+
+Vi har brukt git aktivt under prosjektet. Vi har opprettet issues, og har til beste evne knyttet commits opp mot tilhørende issues. 
 
 - Responsiv web design
