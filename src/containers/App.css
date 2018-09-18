@@ -143,19 +143,19 @@ svg {
 
 
   .slide-in-enter {
-    top: -100vh;
-  }
-  .slide-in-enter.slide-in-enter-active {
-    top: 0;
-    transition: top 0.5s;
-  }
-  .slide-in-leave {
-    top: 0;
-  }
-  .slide-in-leave.slide-in-leave-active {
-    top: -100vh;
-    transition: top 0.5s;
-  }
+      top: -101vh;
+    }
+    .slide-in-enter.slide-in-enter-active {
+      top: 0;
+      transition: top 0.5s;
+    }
+    .slide-in-leave {
+      top: 0;
+    }
+    .slide-in-leave.slide-in-leave-active {
+      top: -101vh;
+      transition: top 0.5s;
+    }
 
   .fa-angle-down::before {
     position: absolute;
@@ -242,7 +242,7 @@ svg {
 	.menu {
 		display: none;
   }
-  
+
 
 	.largeMenuComponent {
       display: inline;
