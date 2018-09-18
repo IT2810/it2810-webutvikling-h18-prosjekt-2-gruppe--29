@@ -7,15 +7,24 @@ export class ContentContainer extends Component {
 
   constructor(props) {
     super(props);
+    this.updateSelectedTab = this.updateSelectedTab.bind(this);
     this.state = {
       selectedPic: "",
       selectedText: "",
-      selectedAudio: ""
+      selectedAudio: "",
+      selectedTab: 1,
     }
   }
 
+  updateSelectedTab = (tabNumber) => {
+    this.setState({selectedTab : tabNumber}, function () {
+        console.log(this.state.selectedTab);
+    });
+  };
+
   updateRadioButtonAttr = (e, type) => {
     //contentcontainer
+    console.log(type)
     if(type === "selectedPic"){
       this.setState({
         selectedPic: e.target.value
@@ -36,7 +45,7 @@ export class ContentContainer extends Component {
   render () {
       return (
           <div className='contentContainer'>
-              <ExContainer/>
+              <ExContainer updateSelectedTab={this.updateSelectedTab}/>
               <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
               <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
           </div>
