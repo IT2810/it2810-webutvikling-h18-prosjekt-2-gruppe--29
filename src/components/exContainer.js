@@ -7,11 +7,9 @@ export class ExContainer extends Component {
     render () {
         return (
             <div className="exContainer">
-              <div className="topContainer">
-                <h1 className="title">Gallery Amazing Fantastico</h1>
-                <TabContainer />
-              </div>
-                <DynamicPictureContainer textName="joke1" imgName="cats" audioName={dogBark}/>
+              <h1 className="title">Gallery Amazing Fantastico</h1>
+              <TabContainer />
+              <DynamicPictureContainer textName="joke1" imgName="cats" audioName={dogBark}/>
             </div>
         )
     }
