@@ -16,7 +16,7 @@ export class PictureFrame extends Component {
     }
 
     getText= (props) => {
-        const cachedHits = localStorage.getItem(props);
+        const cachedHits = sessionStorage.getItem(props);
         if (cachedHits) {
             this.setState({
                 text: cachedHits
@@ -28,12 +28,12 @@ export class PictureFrame extends Component {
             this.onSetResult(props, res.data.text)});
       }
       onSetResult = (key, value) => {
-        localStorage.setItem(key, JSON.stringify(value));
+        sessionStorage.setItem(key, JSON.stringify(value));
         this.setState({ text: value });
       }
 
     getImg = async (props) => {
-        let dataVar = JSON.parse(localStorage.getItem(props))
+        let dataVar = JSON.parse(sessionStorage.getItem(props))
         if(dataVar){
             this.setState({
                 imgUrl:  dataVar
@@ -45,7 +45,7 @@ export class PictureFrame extends Component {
             this.setState({
                 imgUrl: picture.data
             })
-            localStorage.setItem(props, JSON.stringify(picture.data))
+            sessionStorage.setItem(props, JSON.stringify(picture.data))
         }
         catch (error) {
             console.error(error);
