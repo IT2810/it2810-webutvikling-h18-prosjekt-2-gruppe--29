@@ -3,6 +3,27 @@ Project 2, Group 29
 ## Dependencies
 For AJAX calls: [Axios](https://github.com/axios/axios)
 
-## Sketches
-![Settings for mobile](https://user-images.githubusercontent.com/20125339/45034487-fdb5e600-b057-11e8-9cbd-25141f3cb853.png)
-![Gallery for mobile](https://user-images.githubusercontent.com/20125339/45034489-fdb5e600-b057-11e8-9f82-a03879e4832e.png)
+## Valg og løsninger på krav til funksjonalitet
+
+- Samling av bilder, lyd og tekst
+
+- Velge kategori på bilde, lyd og tekst
+Her har vi brukt radiobuttons. Når man endrer valg av radiobutton i en gruppe, sendes en verdi oppover til contentContainer, slik at den nye verdien lagres i state her. Bruker så dette til å endre innhold
+
+- Endre utstilling med tabs
+Når en tab trykkes på....
+
+
+
+
+## Valg og løsninger på krav til teknologi
+
+- React
+Vi har brukt react <3
+
+- Ajax
+Bruker Ajax for å hente ut svg og tekst. 
+
+- Samarbeid/bruk av Git
+
+- Responsiv web design
