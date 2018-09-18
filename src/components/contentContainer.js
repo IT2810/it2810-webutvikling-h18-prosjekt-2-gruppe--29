@@ -3,13 +3,13 @@ import { LargeMenuComponent } from './largeMenuComponent.js';
 import { ExContainer } from './exContainer.js';
 
 export class ContentContainer extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedPic: "",
-      selectedText: "",
-      selectedAudio: ""
+    render () {
+        return (
+            <div className='contentContainer'>
+                <ExContainer/>
+                <LargeMenuComponent/>
+            </div>
+        )
     }
   }
 
