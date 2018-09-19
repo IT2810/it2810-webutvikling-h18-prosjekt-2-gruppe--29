@@ -3,5 +3,15 @@
         "jokes" : ["joke1","joke2","joke3", "joke4"],
         "names" : ["name1", "name2", "name3", "name4"],
         "quote" : ["quote1", "quote2", "quote3", "quote"]
+    },
+    "pictures": {
+        "instruments" : ["instrument1","instrument2","instrument3", "instrument4"],
+        "animals" : ["animal1", "animal2", "animal3", "animal4"],
+        "cartoons" : ["cartoon1", "cartoon2", "cartoon3", "cartoon4"]
+    },
+    "sounds": {
+        "instruments" : ["instrument1","instrument2","instrument3", "instrument4"],
+        "animals" : ["animal1", "animal2", "animal3", "animal4"],
+        "cartoons" : ["cartoon1", "cartoon2", "cartoon3", "cartoon4"]
     }
 }
