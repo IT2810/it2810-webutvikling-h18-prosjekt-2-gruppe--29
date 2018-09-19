@@ -263,7 +263,7 @@ svg {
 
   .radioButton {
   	font-size: 24px;
-    margin: 0px 0px 20px 0px;
+    margin-bottom: 15px;
   }
 
   .radioButton label {
