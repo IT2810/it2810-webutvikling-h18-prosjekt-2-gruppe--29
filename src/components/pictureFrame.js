@@ -14,6 +14,8 @@ export class PictureFrame extends Component {
     componentDidUpdate(prevProps, prevState){
         if (prevProps.textName !== this.props.textName) {
             this.getText(this.props.textName);
+        }
+        if (prevProps.imgName !== this.props.imgName) {
             this.getImg(this.props.imgName);
         }
     }
