@@ -15,7 +15,7 @@ export class LargeMenuComponent extends Component {
         return (
             <div className='largeMenuComponent'>
                 <MenuHeader menuHeaderTitle="Picture"/>
-                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedPic" />
+                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="instrument" opt2="animal" opt3="cartoon" type="selectedPic" />
                 <MenuHeader menuHeaderTitle="Text"/>
                   <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="joke" opt2="name" opt3="quote" type="selectedText"/>
                 <MenuHeader menuHeaderTitle="Audio"/>
