@@ -52,5 +52,4 @@ export class ContentContainer extends Component {
           </div>
       )
   }
-
 }
