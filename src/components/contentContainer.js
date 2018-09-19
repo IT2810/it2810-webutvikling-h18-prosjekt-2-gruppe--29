@@ -35,11 +35,10 @@ export class ContentContainer extends Component {
   render () {
     return (
       <div className='contentContainer'>
-        <ExContainer/>
+        <ExContainer textName="joke1" imgName="cats"/>
         <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
         <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
       </div>
     )
   }
-  
 }
