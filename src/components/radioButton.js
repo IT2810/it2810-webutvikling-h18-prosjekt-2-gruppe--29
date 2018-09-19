@@ -5,7 +5,7 @@ export class RadioButton extends Component {
   //saves selected radio btn according to category in state
   updateRadioButtonAttr = (e) => {
     this.props.updateRadioButtonAttr(e, this.props.type);
-  };
+  }
 
   render() {
 
@@ -14,7 +14,7 @@ export class RadioButton extends Component {
         <form>
           <div className="radioButtonLine">
             <label>
-              <input type="radio" name="radioButtonGroup" value={this.props.opt1} onChange={this.updateRadioButtonAttr}/>
+              <input type="radio" name="radioButtonGroup" value={this.props.opt1} onChange={this.updateRadioButtonAttr} defaultChecked />
               <span className="checkmark"><span className="mark"></span></span>
               { this.props.opt1}
             </label>
