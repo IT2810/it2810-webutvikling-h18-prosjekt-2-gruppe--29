@@ -19,7 +19,7 @@ export class ExContainer extends Component {
         return (
             <div className="exContainer">
                 <TabContainer updateSelectedTab={this.updateSelectedTab}/>
-                <DynamicPictureContainer textName={this.props.theText} imgName="cats" audioName={dogBark}/>
+                <DynamicPictureContainer textName={this.props.theText} imgName={this.props.imgName} audioName={dogBark}/>
             </div>
         )
     }

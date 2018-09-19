@@ -43,10 +43,9 @@ export class ContentContainer extends Component {
   }
 
   render () {
-
       return (
           <div className='contentContainer'>
-              <ExContainer updateSelectedTab={this.updateSelectedTab} theText={this.state.selectedText+this.state.selectedTab}/>
+              <ExContainer updateSelectedTab={this.updateSelectedTab} theText={this.state.selectedText+this.state.selectedTab} imgName={this.state.selectedPic+this.state.selectedTab}/>
               <Menu updateRadioButtonAttr={this.updateRadioButtonAttr}/>
               <LargeMenuComponent updateRadioButtonAttr={this.updateRadioButtonAttr}/>
           </div>
