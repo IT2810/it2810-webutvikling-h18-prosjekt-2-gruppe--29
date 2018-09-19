@@ -10,12 +10,21 @@ export class PictureFrame extends Component {
         }
         
     }
-    componentDidMount(){
+
+    componentDidUpdate(prevProps, prevState){
+        if (prevProps.textName !== this.props.textName) {
+            this.getText(this.props.textName);
+            this.getImg(this.props.imgName);
+        }
+    }
+
+    componentDidMount() {
         this.getText(this.props.textName);
         this.getImg(this.props.imgName);
     }
 
     getText= (props) => {
+        
         const cachedHits = sessionStorage.getItem(props);
         if (cachedHits) {
             this.setState({
@@ -23,6 +32,7 @@ export class PictureFrame extends Component {
             });     
           return;
         }
+
         axios.get('/text/' + props + '.json')
           .then(res => {
             this.onSetResult(props, res.data.text)});
@@ -52,6 +62,7 @@ export class PictureFrame extends Component {
         }
     }
     render () {
+
         return (
             <div className="pictureFrame">
                 <p className="loadedText">{this.state.text}</p>
