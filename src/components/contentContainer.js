@@ -9,9 +9,9 @@ export class ContentContainer extends Component {
     super(props);
     this.updateSelectedTab = this.updateSelectedTab.bind(this);
     this.state = {
-      selectedPic: "Instruments",
-      selectedText: "Instruments",
-      selectedAudio: "Instruments",
+      selectedPic: "Instrument",
+      selectedText: "joke",
+      selectedAudio: "Instrument",
       selectedTab: 1,
     }
   }
