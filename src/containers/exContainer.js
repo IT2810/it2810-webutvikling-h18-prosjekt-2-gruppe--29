@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 import { DynamicPictureContainer } from './dynamicPictureContainer';
-import { TabContainer } from './tabContainer';
+import { TabContainer } from '../containers/tabContainer';
 
 export class ExContainer extends Component {
-
-    constructor(props) {
-        super(props)
-
-    }
 
     updateSelectedTab = (tabNumber) => {
       this.props.updateSelectedTab(tabNumber)
     };
 
     render () {
-
         return (
             <div className="exContainer">
                 <TabContainer updateSelectedTab={this.updateSelectedTab}/>
@@ -22,4 +16,5 @@ export class ExContainer extends Component {
             </div>
         )
     }
+    
 }

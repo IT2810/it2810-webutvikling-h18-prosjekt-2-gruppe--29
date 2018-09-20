@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export class Music extends Component {
 
   constructor(props) {
@@ -31,8 +30,8 @@ export class Music extends Component {
     return (
         <div>
           <audio ref="audio_tag" src={this.state.audioUrl} controls autoPlay/>
-          <div>{this.state.audioUrl}</div>
         </div>
-        );
+    );
   }
+
 }
