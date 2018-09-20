@@ -8,14 +8,13 @@ For AJAX-kall: [Axios](https://github.com/axios/axios)
 Hensikten med React er å dele inn løsningen i uavhengige komponenter som kan gjenbrukes i ulike situasjoner. Vi valgte å dekomponere problemet vårt ned til 12 komponenter som kan finnes i `Component-mappen` i prosjektet;
 ![Komponentstruktur](https://user-images.githubusercontent.com/20125339/45820011-1542cf00-bce6-11e8-946a-06e7e6bc8125.png)
 
-For å håndtere tilstanden i applikasjonen har vi brukt `state` og `callback-functions` som har blitt sendt mellom komponenter. 
+For å håndtere tilstanden i applikasjonen ble det brukt `state` og `callback-functions` mellom komponenter. Dette var nødvendig for at komponenten PictureFrame (som hadde ansvaret for å hente data enten via AJAX eller Cache) hentet riktig mediefil basert på valg tatt i komponenter høyere i hierarkiet.
 
 ## Responsivt design
-For å få løsningen til å skalere etter skjermstørrelse på en fin og fornuftig måte har vi brukt CSS-grid. I tillegg har vi en egen menykomponent for skjermer under 800px (som er mer tilpasset mobil), og en annen menykomponent som er lagd for desktop/skjermer på størrelse over 800px. 
+For å få løsningen til å skalere etter skjermstørrelse på en fin og fornuftig måte har vi brukt CSS-grid. I tillegg har vi en egen menykomponent for skjermer under 800px (som er mer tilpasset mobil), og en annen menykomponent som er lagd for desktop/skjermer på størrelse over 800px. Vi startet med å utvikle løsningen for mobil, derretter for større skjermer. Dette gjorde vi da vi av erfaring har opplevd det som enklere å starte med mindre skjermstørrelser. 
 
 ## Dynamisk innlastning av elementer - Ajax
-For dynamisk innlastning av elementer har vi brukt Ajax og rammevervet Axios. Dette rammeverket lot oss gjøre enkle og korte kall for å få hentet dataen vi trengte. I tillegg blir filer som er lastet inn lagret lokalt på klienten via sessionStorage, slik at filer kun trenger å lastes inn èn gang fra API'et. I tillegg laster vi inn filer kun når det skiftes tabs, noe som gjør at vi kun laster inn filer vi faktisk bruker. Vi har kun brukt Ajax og Axios for å hente data av typen bilde (svg) og tekst (json). Hva som lastes inn kontrolleres av hvilke radiobuttons som er valgt i menykomponentene, samt hvilken tab som selektert. 
-Metodene som brukes for å hente dataen dynamisk og å lagre lokalt i sessionStorage er i `pictureFrame.js`
+For dynamisk innlastning av elementer har vi brukt Ajax og rammevervet Axios. Dette rammeverket lot oss gjøre enkle og korte AJAX-kall for å hente data. Filer blir ved første innlastning lagret i temporary-cache (`sessionStorage`), etter dette vil filene lastes direkte derfra fremfor å gjøre nye AJAX-kall. Mediefilene blir kun etterspurt når det skiftes tabs (endring i state), noe som gjør at vi kun laster inn de filene som faktisk vises på skjermen. Vi har kun brukt Ajax og Axios for å hente data av typen bilde (svg) og tekst (json), lydfiler blir lastet direkte inn som en fil. Hva som lastes inn kontrolleres av hvilke radiobuttons som er valgt i menykomponentene, samt hvilken tab som selektert. Metodene som brukes for å hente dataen dynamisk og å lagre lokalt i sessionStorage er i `pictureFrame.js`
 
 
 ## Versjonskontroll
