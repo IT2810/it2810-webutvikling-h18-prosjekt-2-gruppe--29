@@ -5,7 +5,7 @@ For AJAX-kall: [Axios](https://github.com/axios/axios)
 
 
 ## React og komponentstruktur
-Hensikten med React er å dele inn løsningen i uavhengige komponenter som kan gjenbrukes i ulike situasjoner. Vi valgte å dekomponere problemet vårt ned til 12 komponenter som kan finnes i `Component-mappen` i prosjektet;
+Hensikten med React er å dele problemer inn i uavhengige komponenter som kan gjenbrukes i ulike situasjoner. Vi valgte å dekomponere problemet vårt ned til 12 komponenter som kan finnes i `Component-mappen` i prosjektet;
 ![Komponentstruktur](https://user-images.githubusercontent.com/20125339/45820011-1542cf00-bce6-11e8-946a-06e7e6bc8125.png)
 
 For å håndtere tilstanden i applikasjonen ble det brukt `state` og `callback-functions` mellom komponenter. Dette var nødvendig for at komponenten PictureFrame (som hadde ansvaret for å hente data enten via AJAX eller Cache) hentet riktig mediefil basert på valg tatt i komponenter høyere i hierarkiet.
