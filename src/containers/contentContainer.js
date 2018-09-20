@@ -12,7 +12,7 @@ export class ContentContainer extends Component {
       selectedPic: "Instrument",
       selectedText: "joke",
       selectedAudio: "Instrument",
-      selectedTab: 1,
+      selectedTab: null, //default blir satt i tab.js
     }
   }
 
