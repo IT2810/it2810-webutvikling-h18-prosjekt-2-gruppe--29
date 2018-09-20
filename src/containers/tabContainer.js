@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tab } from './tab.js';
+import { Tab } from '../components/tab.js';
 
 export class TabContainer extends Component {
 

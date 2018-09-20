@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { DynamicPictureContainer } from './dynamicPictureContainer';
-import { TabContainer } from './tabContainer';
+import { TabContainer } from '../containers/tabContainer';
 
 export class ExContainer extends Component {
 

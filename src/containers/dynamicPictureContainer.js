@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { PictureFrame } from './pictureFrame';
-import {Music} from './Music';
+import { PictureFrame } from '../components/pictureFrame';
+import {Music} from '../components/Music';
 
 export class DynamicPictureContainer extends Component {
 

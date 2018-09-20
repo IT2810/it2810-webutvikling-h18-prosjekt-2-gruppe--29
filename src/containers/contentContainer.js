@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { LargeMenuComponent } from './largeMenuComponent.js';
+import { LargeMenuComponent } from '../components/largeMenuComponent.js';
 import { ExContainer } from './exContainer.js';
-import { Menu } from './menu.js';
+import { Menu } from '../components/menu.js';
 
 export class ContentContainer extends Component {
 
