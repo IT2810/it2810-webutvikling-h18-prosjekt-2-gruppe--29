@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 
 export class RadioButton extends Component {
 
-  //saves selected radio btn according to category in state
   updateRadioButtonAttr = (e) => {
     this.props.updateRadioButtonAttr(e, this.props.type);
   }
 
   render() {
-
     return (
       <div className="radioButton">
         <form>

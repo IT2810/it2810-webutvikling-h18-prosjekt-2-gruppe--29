@@ -8,7 +8,6 @@ export class PictureFrame extends Component {
             text: "",
             imgUrl: ""
         }
-        
     }
 
     componentDidUpdate(prevProps, prevState){
@@ -25,12 +24,12 @@ export class PictureFrame extends Component {
         this.getImg(this.props.imgName);
     }
 
-    getText= (props) => {  
+    getText= (props) => {
         const cachedHits = sessionStorage.getItem(props);
         if (cachedHits) {
             this.setState({
                 text: cachedHits
-            });     
+            });
           return;
         }
 
@@ -65,12 +64,12 @@ export class PictureFrame extends Component {
         }
     }
     render () {
-
         return (
             <div className="pictureFrame">
                 <p className="loadedText">{this.state.text}</p>
-                <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>                
+                <svg preserveAspectRatio="none" className="img" dangerouslySetInnerHTML={{__html: this.state.imgUrl}}></svg>
             </div>
         )
     }
+    
 }

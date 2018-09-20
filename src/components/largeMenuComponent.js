@@ -4,9 +4,7 @@ import { MenuHeader } from './MenuHeader.js';
 
 export class LargeMenuComponent extends Component {
 
-  //saves selected radio btn according to category in state
   updateRadioButtonAttr = (e, type) => {
-    //largemenucomponent
     this.props.updateRadioButtonAttr(e, type);
   };
 
@@ -23,4 +21,5 @@ export class LargeMenuComponent extends Component {
             </div>
         )
     }
+    
 }

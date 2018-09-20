@@ -7,8 +7,6 @@ export class TabContainer extends Component {
       this.props.updateSelectedTab(tabNumber)
     };
 
-
-
     render () {
         return (
             <div className='tabContainer'>
@@ -19,4 +17,5 @@ export class TabContainer extends Component {
             </div>
         )
     }
+    
 }

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-
 export class Tab extends Component {
 
   updateTabAttr = () => {
     this.props.updateTabAttr(this.props.number);
   };
-
 
     render () {
       return (
@@ -15,4 +13,5 @@ export class Tab extends Component {
           </div>
       )
     }
+
 }
