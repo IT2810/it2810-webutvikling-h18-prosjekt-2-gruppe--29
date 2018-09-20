@@ -4,7 +4,7 @@ import {Music} from './Music';
 
 export class DynamicPictureContainer extends Component {
 
-    
+
 
     render () {
 

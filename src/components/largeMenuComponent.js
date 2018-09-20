@@ -19,7 +19,7 @@ export class LargeMenuComponent extends Component {
                 <MenuHeader menuHeaderTitle="Text"/>
                   <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Joke" opt2="Name" opt3="Quote" type="selectedText"/>
                 <MenuHeader menuHeaderTitle="Audio"/>
-                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedAudio"/>
+                  <RadioButton updateRadioButtonAttr={this.updateRadioButtonAttr} opt1="Instrument" opt2="Animal" opt3="Cartoon" type="selectedAudio"/>
             </div>
         )
     }

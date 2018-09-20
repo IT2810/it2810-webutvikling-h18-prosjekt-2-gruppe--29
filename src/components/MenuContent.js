@@ -28,11 +28,11 @@ export class MenuContent extends Component {
     return (
       <div className="menuContent">
         <MenuHeader menuHeaderTitle="Picture" id="topMenuHeader"/>
-          <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedPic" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+          <RadioButton opt1="Instruments" opt2="Animal" opt3="Cartoon" type="selectedPic" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
         <MenuHeader menuHeaderTitle="Text"/>
-          <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedText" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+          <RadioButton opt1="Instruments" opt2="Animals" opt3="Cartoon" type="selectedText" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
         <MenuHeader menuHeaderTitle="Audio"/>
-          <RadioButton opt1="Instruments" opt2="Animals" opt3="Childrens Shows" type="selectedAudio" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
+          <RadioButton opt1="Instruments" opt2="Animal" opt3="Cartoon" type="selectedAudio" updateRadioButtonAttr={this.updateRadioButtonAttr}/>
       </div>
     );
   }
