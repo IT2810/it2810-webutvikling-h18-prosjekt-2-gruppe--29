@@ -23,6 +23,8 @@ audio::-webkit-media-controls-panel{
 
 .img {
   width: 100%;
+  background: contain;
+  background: center no-repeat;
 }
 
 .contentContainer {
@@ -44,7 +46,7 @@ audio::-webkit-media-controls-panel{
 
 .title {
   margin-top: 35px;
-  font-size: 50px;
+  font-size: 2em;
   text-align: center;
 }
 
