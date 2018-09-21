@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { DynamicPictureContainer } from './dynamicPictureContainer';
-import { TabContainer } from '../containers/tabContainer';
+import { DynamicPictureContainer } from './DynamicPictureContainer.js';
+import { TabContainer } from './TabComponents/TabContainer';
 
 export class ExContainer extends Component {
 
@@ -15,6 +15,5 @@ export class ExContainer extends Component {
                 <DynamicPictureContainer textName={this.props.theText} imgName={this.props.imgName} audioName={this.props.audioName}/>
             </div>
         )
-    }
-    
+    }    
 }

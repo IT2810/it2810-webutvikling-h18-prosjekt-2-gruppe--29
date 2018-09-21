@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 export class PictureFrame extends Component {
+
     constructor(props){
         super()
         this.state = {
@@ -32,19 +33,12 @@ export class PictureFrame extends Component {
             });
           return;
         }
-
         axios.get('/text/' + props + '.json')
           .then(res => {
             this.onSetResult(props, res.data.text)});
       }
 
-    onSetResult = (key, value) => {
-        sessionStorage.setItem(key, JSON.stringify(value));
-        this.setState({ text: value });
-    }
-
     getImg = async (props) => {
-        console.log(props)
         let dataVar = JSON.parse(sessionStorage.getItem(props))
         if(dataVar){
             this.setState({
@@ -63,6 +57,12 @@ export class PictureFrame extends Component {
             console.error(error);
         }
     }
+
+    onSetResult = (key, value) => {
+        sessionStorage.setItem(key, JSON.stringify(value));
+        this.setState({ text: value });
+    }
+
     render () {
         return (
             <div className="pictureFrame">

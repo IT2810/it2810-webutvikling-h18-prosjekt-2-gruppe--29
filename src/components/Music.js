@@ -33,5 +33,4 @@ export class Music extends Component {
         </div>
     );
   }
-
 }
