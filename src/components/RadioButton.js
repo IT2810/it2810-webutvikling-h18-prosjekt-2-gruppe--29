@@ -9,15 +9,9 @@ export class RadioButton extends Component {
 
   componentWillReceiveProps(){ 
     const cachedOpt = sessionStorage.getItem(this.props.type);
-    if (cachedOpt === this.props.opt1) {
-      this.setState({ selected : this.props.opt1 })
+    if (cachedOpt) {
+      this.setState({ selected : cachedOpt })
     } 
-    else if (cachedOpt === this.props.opt2) {
-      this.setState({ selected : this.props.opt2 })
-    } 
-    else if (cachedOpt === this.props.opt3) {
-      this.setState({ selected : this.props.opt3 })
-    }
   }
     
   updateRadioButtonAttr = (e) => {
