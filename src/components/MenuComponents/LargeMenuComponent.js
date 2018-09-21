@@ -21,5 +21,5 @@ export class LargeMenuComponent extends Component {
             </div>
         )
     }
-    
+
 }
