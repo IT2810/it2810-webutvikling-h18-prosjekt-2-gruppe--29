@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export class RadioButton extends Component {
-
+  
   constructor(props, context) {
     super(props, context)
     this.state = { selected : this.props.opt1 };
@@ -20,9 +20,6 @@ export class RadioButton extends Component {
     }
   }
     
-
-
-
   updateRadioButtonAttr = (e) => {
     this.props.updateRadioButtonAttr(e, this.props.type);
     sessionStorage.setItem(this.props.type, e.target.value) //cacher valgt radiobutton
@@ -57,5 +54,4 @@ export class RadioButton extends Component {
       </div>
     );
   }
-
 }

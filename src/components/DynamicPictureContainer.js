@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { PictureFrame } from '../components/pictureFrame';
-import {Music} from '../components/Music';
+import { PictureFrame } from '../containers/PictureFrame';
+import {Music} from './Music';
 
 export class DynamicPictureContainer extends Component {
 
@@ -12,5 +12,4 @@ export class DynamicPictureContainer extends Component {
             </div>
         )
     }
-    
 }

@@ -13,12 +13,11 @@ export class Tab extends Component {
     }
   }
 
-    render () {
-      return (
-        <div className={this.props.selected ? "tabStyle selectedTab" : "tabStyle"} onClick={this.updateTabAttr} >
-              <h1 className="tabTextStyle" >{this.props.number}</h1>
-          </div>
-      )
-    }
-
+  render () {
+    return (
+      <div className={this.props.selected ? "tabStyle selectedTab" : "tabStyle"} onClick={this.updateTabAttr} >
+            <h1 className="tabTextStyle" >{this.props.number}</h1>
+        </div>
+    )
+  }
 }

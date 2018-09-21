@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { MenuContent } from '../components/MenuContent.js';
-
+import { MenuContent } from '../MenuComponents/MenuContent.js';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 export class Menu extends Component {
@@ -18,7 +17,6 @@ export class Menu extends Component {
   };
 
 	updateRadioButtonAttr(e,type) {
-		//menu.js
 		this.props.updateRadioButtonAttr(e, type);
 	}
 
@@ -31,7 +29,7 @@ export class Menu extends Component {
 				<ReactCSSTransitionReplace
 					transitionName="slide-in"
 					transitionLeaveTimeout={500}>
-			{this.state.showMenu && <MenuContent updateRadioButtonAttr={this.updateRadioButtonAttr}/>}
+					{this.state.showMenu && <MenuContent updateRadioButtonAttr={this.updateRadioButtonAttr}/>}
 				</ReactCSSTransitionReplace>
 			</div>
     )

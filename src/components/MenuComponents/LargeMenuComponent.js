@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RadioButton } from './radioButton.js';
+import { RadioButton } from '../RadioButton.js';
 import { MenuHeader } from './MenuHeader.js';
 
 export class LargeMenuComponent extends Component {
@@ -8,7 +8,7 @@ export class LargeMenuComponent extends Component {
     this.props.updateRadioButtonAttr(e, type);
   };
 
-    //menu for pc
+    //menu for larger screens
     render () {
         return (
             <div className='largeMenuComponent'>

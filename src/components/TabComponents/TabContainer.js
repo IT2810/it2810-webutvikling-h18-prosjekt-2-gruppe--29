@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tab } from '../components/tab.js';
+import { Tab } from './Tab.js';
 
 export class TabContainer extends Component {
 
@@ -12,8 +12,6 @@ export class TabContainer extends Component {
       this.props.updateSelectedTab(tabNumber)
       this.setState({ selectedTab : tabNumber })
     };
-
-
 
     render () {
         return (

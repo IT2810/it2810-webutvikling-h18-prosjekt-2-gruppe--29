@@ -9,7 +9,6 @@ export class MenuHeader extends Component {
 			</div>
 		);
 	}
-	
 }
 
 export default MenuHeader;

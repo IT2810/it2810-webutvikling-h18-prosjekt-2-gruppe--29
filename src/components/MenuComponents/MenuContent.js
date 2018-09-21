@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { RadioButton } from '../components/radioButton.js';
-import { MenuHeader } from '../components/MenuHeader.js';
+import { RadioButton } from '../RadioButton.js';
+import { MenuHeader } from './MenuHeader.js';
 
-//menu for cellphone/smaller screens
+//menu for  mobile/smaller screens
 export class MenuContent extends Component {
 
   constructor(props, context) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { LargeMenuComponent } from '../components/largeMenuComponent.js';
-import { ExContainer } from './exContainer.js';
-import { Menu } from '../components/menu.js';
+import { LargeMenuComponent } from './MenuComponents/LargeMenuComponent.js';
+import { ExContainer } from './ExContainer.js';
+import { Menu } from './MenuComponents/Menu.js';
 
 export class ContentContainer extends Component {
 
@@ -49,5 +49,4 @@ export class ContentContainer extends Component {
           </div>
       )
   }
-  
 }
