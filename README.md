@@ -22,7 +22,7 @@ Som versjonskontroll har gruppen brukt Git. Vi har hatt [oversikt over våre iss
  
 
 ##  Testing
-Under utviklingen av komponenter og containere har vi testet om de er responsive, slik at vi ikke måtte sitte med dette til slutt da det kan bli vanskelig. Vi startet med å utvikle for Mobil, da det av erfaring har vist seg å være lettere å konstruere et responsivt design for større skjermer senere i prosessen. Underveis har vi også jevnlig åpnet løsningen i forskellige browsere (Chrome, Mozilla Firefox, IE og Safari). Dette for å sørge for at alle browsere har lik oppførsel og at brukere får det samme innhold uavhengig av browser (Cross-browser-testing). 
+Under utviklingen av komponenter og containere har vi testet om de er responsive, slik at vi ikke måtte sitte med dette til slutt da det kan bli vanskelig. Vi startet med å utvikle for Mobil, da det av erfaring har vist seg å være lettere å konstruere et responsivt design for større skjermer senere i prosessen. Underveis har vi også jevnlig åpnet løsningen i forskellige browsere (Chrome, Mozilla Firefox, Microsoft Edge og Safari). Dette for å sørge for at alle browsere har lik oppførsel og at brukere får det samme innhold uavhengig av browser (Cross-browser-testing). 
 
 Når man åpner konsollen mens løsningen er oppe i en browser, kan man teste hvordan løsningen ser ut på andre skjermstørrelser/enheter. Dette har vi også vært opptatt av å gjøre mye underveis. Her testet vi på skjermstørrelsen for iPhone 5, siden det er den minste skjermen vår løsning på tilpasses for. Vi har også sjekket hvordan det ser ut på tablet. Både på tablet og mobil ble løsningen testet med enhetene både liggende og stående. 
 
