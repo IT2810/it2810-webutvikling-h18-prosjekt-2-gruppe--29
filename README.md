@@ -1,15 +1,19 @@
 Prosjekt 2, Gruppe 29
 
 ## Teknologiske avhengigheter
-AJAX-kall: [Axios](https://github.com/axios/axios)
-Node.js
-Npm
+- AJAX-kall: [Axios](https://github.com/axios/axios)
+- Node.js
+- Npm
 
 Kjør `npm install` før første bruk. 
 
 ## Funksjonalitet
 
 Oppgaven gikk ut på å lage et bildegalleri som gir deg en fremstilling av lyd, bilde og tekst - basert på brukervalg. Vi valgte å vise hver kombinasjon som "Tabs"[1] over bildet, og kategorivalget [2] som radiobuttons i en sidemeny for desktop - og dropdown for mobil. Når bruker laster siden for første gang vil bilde, tekst og lyd - nr 1,  bli vist. Når bruker skifter kombinasjon (tab) og/eller kategori, vil en ny fremstilling genereres. 
+
+Et av funksjonskravene var at siden skulle fungere like godt på små skjermer som store, dette kravet har vi oppfylt ved å bruke CSS-grid og Media Queries. Dette står det mer utfyllende om under punktet "Responsivt Design". 
+
+Det var også et krav at bildefilene skulle være av typen SVG, og tekstfilene av typen JSON. Vi fant bildefiler og tekssnutter på nettet og konverterte de til riktig format. Disse blir hentet med AXIOS/cache og satt inn i web-appen Les mer opp dette under punktet "Dynamisk innlastning av elementer - Ajax".
 
 ### [1]Tabs
 Hvilken kombinasjon brukeren kunne velge ble representert ved hjelp av en Tab-bar som inneholdt 4 tabs, en for hver mulige kombinasjon. Når siden laster vil komponenten `ContentContainer` sende med en funksjon nedover i hierarkiet, slik at det ved brukerklikk vil bli sendt tab.nr tilbake opp til foreldrekomponenten. 
