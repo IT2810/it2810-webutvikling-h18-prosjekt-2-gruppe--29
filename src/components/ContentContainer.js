@@ -16,6 +16,12 @@ export class ContentContainer extends Component {
     }
   }
 
+  componentDidMount() {
+    sessionStorage.removeItem("selectedPic");
+    sessionStorage.removeItem("selectedText");
+    sessionStorage.removeItem("selectedAudio");
+  }
+
   updateSelectedTab = (tabNumber) => {
     this.setState({selectedTab : tabNumber}, function () {
         console.log(this.state.selectedTab);
